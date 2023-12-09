@@ -1,0 +1,16 @@
+digraph G {
+  0 [label="manipulates"];
+  1 [label="update"];
+  2 [label="uses"];
+  3 [label="TERMINAL",shape=diamond];
+  4 [label="INITIAL",shape=box];
+0->0 [label="P: 0.65"];
+0->1 [label="P: 0.35"];
+1->0 [label="P: 0.04"];
+1->1 [label="P: 0.50"];
+1->2 [label="P: 0.45"];
+1->3 [label="P: 0.02"];
+2->0 [label="P: 0.96"];
+2->3 [label="P: 0.04"];
+4->2 [label="P: 1.00"];
+}
